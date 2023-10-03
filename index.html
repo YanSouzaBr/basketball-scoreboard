@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4544b1d93f.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <div class="timerContainer">
+        <div class="timerContainerInside">
+            <h3>TIMER</h3>
+            <div class="timerInputs">
+                    <input id="min" type="number" value="12">
+                    <span id="whiteColor"><h1>:</h1></span>
+                    <input id="sec" type="number" value="00">
+            </div>
+            <div class="timerButtons">
+                <button id="start" class="timer-btn btn"  ><i class="fa-solid fa-play"></i></button>
+                <button id="pause" class="timer-btn btn"  ><i class="fa-solid fa-pause"></i></button>
+                <button id="stop" class="timer-btn btn"  ><i class="fa-solid fa-stop"></i></button>
+                <button id="reset" class="timer-btn btn"  ><i class="fa-solid fa-rotate-left"></i></button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="first">
+            <h3 class="title">HOME</h3>
+            <div class="score">
+                <p id="home">0</p>
+            </div>
+            <div class="buttons">
+                <button class="btn"  onclick="addOneHome(), checkPoints(), randomImg()">+1</button>
+                <button class="btn"  onclick="addTwoHome(), checkPoints(), randomImg()">+2</button>
+                <button class="btn"  onclick="addThreeHome(), checkPoints(), randomImg()">+3</button>
+            </div>
+        </div>
+
+
+        <div class="reset">
+            <button class="resetButton" onclick="reset()">New Game</button>
+        </div>
+
+
+        <div class="second">
+            <h3 class="title">GUEST</h3>
+            <div class="score">
+                <p id="guest">0</p>
+            </div>
+            <div class="buttons">
+                <button class="btn" onclick="addOneGuest(), checkPoints(), randomImg()">+1</button>
+                <button class="btn" onclick="addTwoGuest(), checkPoints(), randomImg()">+2</button>
+                <button class="btn" onclick="addThreeGuest(), checkPoints(), randomImg()">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
